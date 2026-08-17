@@ -10,15 +10,32 @@
 <body>
 
     <div class="container">
+        <!-- Theme Toggle -->
+        <div class="theme-toggle">
+            <button id="toggleBtn" aria-label="Toggle Theme">
+                <i class="fa-solid fa-moon"></i>
+            </button>
+        </div>
+
         <!-- Header Profile -->
         <header class="profile-card">
             <div class="avatar-wrapper">
-                <div class="avatar">NI</div>
+                <img src="profile.jpg" alt="Nashoikhul Ibad" class="avatar-img" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                <div class="avatar-fallback">NI</div>
             </div>
             <h1>Nashoikhul Ibad</h1>
             <p class="tagline">Junior Web Developer & Tech Enthusiast</p>
             <p class="location"><i class="fa-solid fa-location-dot"></i> Indonesia</p>
         </header>
+
+        <!-- Tech Stack Badges -->
+        <div class="tech-stack">
+            <span class="badge"><i class="fa-brands fa-html5"></i> HTML5</span>
+            <span class="badge"><i class="fa-brands fa-css3-alt"></i> CSS3</span>
+            <span class="badge"><i class="fa-brands fa-git-alt"></i> Git</span>
+            <span class="badge"><i class="fa-brands fa-linux"></i> Linux</span>
+            <span class="badge"><i class="fa-solid fa-terminal"></i> Termux</span>
+        </div>
 
         <!-- Stats Counter -->
         <section class="stats-grid">
@@ -76,6 +93,19 @@
         </footer>
     </div>
 
+    <script>
+        const toggleBtn = document.getElementById('toggleBtn');
+        const icon = toggleBtn.querySelector('i');
+
+        toggleBtn.addEventListener('click', () => {
+            document.body.classList.toggle('light-theme');
+            if (document.body.classList.contains('light-theme')) {
+                icon.className = 'fa-solid fa-sun';
+            } else {
+                icon.className = 'fa-solid fa-moon';
+            }
+        });
+    </script>
 </body>
 </html>
 
