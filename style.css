@@ -3,7 +3,7 @@
     --card-bg: #161b22;
     --card-hover: #1f242d;
     --primary: #3b82f6;
-    --accent: #8b5cf6;
+    --accent: #10b981;
     --text-main: #f0f6fc;
     --text-muted: #8b949e;
     --border: rgba(240, 246, 252, 0.1);
@@ -14,7 +14,7 @@ body.light-theme {
     --card-bg: #ffffff;
     --card-hover: #f3f4f6;
     --primary: #2563eb;
-    --accent: #7c3aed;
+    --accent: #059669;
     --text-main: #1f2328;
     --text-muted: #656d76;
     --border: rgba(31, 35, 40, 0.15);
@@ -180,7 +180,7 @@ h1 {
 .project-card {
     background: var(--card-bg);
     border: 1px solid var(--border);
-    padding: 16px;
+    padding: 14px;
     border-radius: 14px;
     display: flex;
     align-items: center;

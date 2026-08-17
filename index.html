@@ -51,7 +51,7 @@
                 <h2>Proyek Pilihan</h2>
             </div>
             <div class="project-grid">
-                <!-- Proyek 1: Kartu Nama Digital (DIPERBAIKI) -->
+                <!-- Proyek 1: Kartu Nama Digital -->
                 <a href="https://an4km4ma.github.io/Kartu_nama/" class="project-card" target="_blank">
                     <div class="project-icon"><i class="fas fa-address-card"></i></div>
                     <div class="project-info">
@@ -92,6 +92,7 @@
                 <a href="https://github.com/an4km4ma" class="btn btn-github" target="_blank">
                     <i class="fab fa-github"></i> GitHub
                 </a>
+                <!-- UBAH NOMOR WA DI BAWAH INI SESUAI NOMOR ANDA -->
                 <a href="https://wa.me/628123456789" class="btn btn-wa" target="_blank">
                     <i class="fab fa-whatsapp"></i> WhatsApp
                 </a>
@@ -103,6 +104,21 @@
             <p>Dibuat secara lokal menggunakan <span>Termux</span> & <span>Acode</span></p>
         </footer>
     </div>
+
+    <!-- Script Mode Gelap / Terang -->
+    <script>
+        const themeBtn = document.getElementById('themeBtn');
+        const icon = themeBtn.querySelector('i');
+
+        themeBtn.addEventListener('click', () => {
+            document.body.classList.toggle('light-theme');
+            if (document.body.classList.contains('light-theme')) {
+                icon.classList.replace('fa-moon', 'fa-sun');
+            } else {
+                icon.classList.replace('fa-sun', 'fa-moon');
+            }
+        });
+    </script>
 </body>
 </html>
 
