@@ -66,7 +66,7 @@ body {
 /* Profile Header */
 .profile-card {
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 }
 
 .avatar-wrapper {
@@ -122,19 +122,21 @@ h1 {
     flex-wrap: wrap;
     justify-content: center;
     gap: 8px;
-    margin-bottom: 20px;
+    margin-top: 15px;
+    margin-bottom: 25px; /* Memberi jarak aman ke Stats */
 }
 
 .badge {
     background: var(--card-bg);
     border: 1px solid var(--border);
-    color: var(--text-muted);
-    font-size: 11px;
-    padding: 5px 10px;
+    color: var(--text-main);
+    font-size: 12px;
+    padding: 6px 12px;
     border-radius: 20px;
     display: flex;
     align-items: center;
-    gap: 5px;
+    gap: 6px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
 }
 
 /* Stats Section */
@@ -226,7 +228,7 @@ h1 {
     margin-left: auto;
 }
 
-/* Buttons */
+/* Social Buttons */
 .social-links {
     display: grid;
     grid-template-columns: 1fr 1fr;
