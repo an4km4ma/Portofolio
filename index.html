@@ -3,107 +3,106 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nashoikhul Ibad - Portfolio</title>
+    <title>Nashoikhul Ibad | Web Developer</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-
     <div class="container">
         <!-- Theme Toggle -->
         <div class="theme-toggle">
-            <button id="toggleBtn" aria-label="Toggle Theme">
-                <i class="fa-solid fa-moon"></i>
-            </button>
+            <button id="themeBtn" aria-label="Toggle Theme"><i class="fas fa-moon"></i></button>
         </div>
 
-        <!-- Header Profile -->
+        <!-- Profile Header -->
         <header class="profile-card">
             <div class="avatar-wrapper">
-                <img src="profile.jpg" alt="Nashoikhul Ibad" class="avatar-img" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                <img src="profile.jpg" alt="Nashoikhul Ibad" class="avatar-img">
+            </div>
             <h1>Nashoikhul Ibad</h1>
-            <p class="tagline"> Web Developer & Tech Enthusiast</p>
-            <p class="location"><i class="fa-solid fa-location-dot"></i> Indonesia</p>
+            <p class="tagline">Web Developer & Tech Enthusiast</p>
+            <p class="location"><i class="fas fa-location-dot"></i> Indonesia</p>
         </header>
 
         <!-- Tech Stack Badges -->
         <div class="tech-stack">
-            <span class="badge"><i class="fa-brands fa-html5"></i> HTML5</span>
-            <span class="badge"><i class="fa-brands fa-css3-alt"></i> CSS3</span>
-            <span class="badge"><i class="fa-brands fa-git-alt"></i> Git</span>
-            <span class="badge"><i class="fa-brands fa-linux"></i> Linux</span>
-            <span class="badge"><i class="fa-solid fa-terminal"></i> Termux</span>
+            <span class="badge"><i class="fab fa-html5"></i> HTML5</span>
+            <span class="badge"><i class="fab fa-css3-alt"></i> CSS3</span>
+            <span class="badge"><i class="fab fa-git-alt"></i> Git</span>
+            <span class="badge"><i class="fab fa-linux"></i> Linux</span>
+            <span class="badge"><i class="fas fa-terminal"></i> Termux</span>
         </div>
 
-        <!-- Stats Counter -->
-        <section class="stats-grid">
+        <!-- Stats Section -->
+        <div class="stats-grid">
             <div class="stat-box">
-                <span class="stat-num">2+</span>
+                <span class="stat-num">3+</span>
                 <span class="stat-label">Proyek Web</span>
             </div>
             <div class="stat-box">
                 <span class="stat-num">HTML/CSS</span>
                 <span class="stat-label">Fokus Utama</span>
             </div>
-        </section>
+        </div>
 
-        <!-- Proyek / Portofolio -->
-        <section class="section-title">
-            <h2>Proyek Pilihan</h2>
-        </section>
-
-        <div class="project-grid">
-            <a href="https://an4km4ma.github.io/Kartu_nama/" target="_blank" class="project-card">
-                <div class="project-icon"><i class="fa-solid fa-address-card"></i></div>
-                <div class="project-info">
-                    <h3>Kartu Nama Digital</h3>
-                    <p>Profil interaktif berbasis web yang di-hosting di GitHub Pages.</p>
-                </div>
-                <i class="fa-solid fa-arrow-up-right-from-square external-link"></i>
-            </a>
-
-            <div class="project-card feature-card">
-                <div class="project-icon"><i class="fa-solid fa-laptop-code"></i></div>
-                <div class="project-info">
-                    <h3>Website Portofolio</h3>
-                    <p>Website yang sedang Anda buka saat ini, dibuat langsung via Termux.</p>
-                </div>
+        <!-- Projects Section -->
+        <section class="projects">
+            <div class="section-title">
+                <h2>Proyek Pilihan</h2>
             </div>
-        </div>
+            <div class="project-grid">
+                <!-- Proyek 1: Kartu Nama Digital -->
+                <a href="https://an4km4ma.github.io/Biodata/" class="project-card" target="_blank">
+                    <div class="project-icon"><i class="fas fa-address-card"></i></div>
+                    <div class="project-info">
+                        <h3>Kartu Nama Digital</h3>
+                        <p>Profil interaktif berbasis web yang di-hosting di GitHub Pages.</p>
+                    </div>
+                    <i class="fas fa-external-link-alt external-link"></i>
+                </a>
 
-        <!-- Sosial Media & Kontak -->
-        <section class="section-title">
-            <h2>Hubungi Saya</h2>
+                <!-- Proyek 2: Website Portofolio -->
+                <a href="https://an4km4ma.github.io/Portofolio/" class="project-card" target="_blank">
+                    <div class="project-icon"><i class="fas fa-laptop-code"></i></div>
+                    <div class="project-info">
+                        <h3>Website Portofolio</h3>
+                        <p>Website yang sedang Anda buka saat ini, dibuat langsung via Termux.</p>
+                    </div>
+                    <i class="fas fa-external-link-alt external-link"></i>
+                </a>
+
+                <!-- Proyek 3: Landing Page Jasa (BARU) -->
+                <a href="https://an4km4ma.github.io/landing-page-jasa/" class="project-card" target="_blank">
+                    <div class="project-icon"><i class="fas fa-rocket"></i></div>
+                    <div class="project-info">
+                        <h3>Landing Page Jasa</h3>
+                        <p>Halaman promosi pembuatan website & bot WA dengan desain konversi tinggi.</p>
+                    </div>
+                    <i class="fas fa-external-link-alt external-link"></i>
+                </a>
+            </div>
         </section>
 
-        <div class="social-links">
-            <a href="https://github.com/an4km4ma" target="_blank" class="btn btn-github">
-                <i class="fa-brands fa-github"></i> GitHub
-            </a>
-            <a href="https://wa.me/6285156834970" target="_blank" class="btn btn-wa">
-                <i class="fa-brands fa-whatsapp"></i> WhatsApp
-            </a>
-        </div>
+        <!-- Social / Contact Section -->
+        <section class="contact">
+            <div class="section-title">
+                <h2>Hubungi Saya</h2>
+            </div>
+            <div class="social-links">
+                <a href="https://github.com/an4km4ma" class="btn btn-github" target="_blank">
+                    <i class="fab fa-github"></i> GitHub
+                </a>
+                <a href="https://wa.me/628123456789" class="btn btn-wa" target="_blank">
+                    <i class="fab fa-whatsapp"></i> WhatsApp
+                </a>
+            </div>
+        </section>
 
         <!-- Footer -->
         <footer>
             <p>Dibuat secara lokal menggunakan <span>Termux</span> & <span>Acode</span></p>
         </footer>
     </div>
-
-    <script>
-        const toggleBtn = document.getElementById('toggleBtn');
-        const icon = toggleBtn.querySelector('i');
-
-        toggleBtn.addEventListener('click', () => {
-            document.body.classList.toggle('light-theme');
-            if (document.body.classList.contains('light-theme')) {
-                icon.className = 'fa-solid fa-sun';
-            } else {
-                icon.className = 'fa-solid fa-moon';
-            }
-        });
-    </script>
 </body>
 </html>
 
